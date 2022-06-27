@@ -1,0 +1,9 @@
+from itertools import groupby
+List=input()
+
+listt = []
+for c, items in groupby(List):    
+    listt.append(tuple([len(list(items)),int(c)]))
+
+for i in listt:
+    print(i, end = ' ')
